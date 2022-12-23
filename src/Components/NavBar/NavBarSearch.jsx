@@ -10,9 +10,9 @@ const NavBarSearch = ({ className }) => {
   const handleSubmit = (e) => {
     navigate({
       pathname: '/results/search',
-      search: createSearchParams({
-        query: query,
-      }).toString(),
+      // search: createSearchParams({
+      //   query: query,
+      // }).toString(),
     });
   };
 
