@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { createSearchParams, useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Button from '../Buttons/Button';
 
 const NavBarSearch = ({ className }) => {
