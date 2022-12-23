@@ -3,6 +3,7 @@ import Footer from './Components/Footer/Footer';
 import MovieDetail from './Components/Movies/Details/MovieDetails';
 import NavBar from './Components/NavBar/NavBar';
 import SeriesDetail from './Components/Series/Details/SeriesDetail';
+import NotFound from './Helpers/NotFound';
 import Home from './Pages/Home';
 import Movies from './Pages/Movies';
 import SearchResult from './Pages/SearchResult';
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/tv" element={<Series />} />
         <Route path="/tv/:id" element={<SeriesDetail />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
-        <Route path="/results" element={<SearchResult />} />
+        <Route path="/results/search" element={<SearchResult />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
