@@ -9,10 +9,7 @@ const NavBarSearch = ({ className }) => {
 
   const handleSubmit = (e) => {
     navigate({
-      pathname: '/results/search',
-      // search: createSearchParams({
-      //   query: query,
-      // }).toString(),
+      pathname: '/search/multi',
     });
   };
 
@@ -20,7 +17,7 @@ const NavBarSearch = ({ className }) => {
     <div className={`${className}`}>
       <form onSubmit={handleSubmit}>
         <div className="flex items-center gap-1">
-          <input type="text" name="search" className="bg-transparent focus:outline-none group focus:bg-transparent autofill:!bg-transparent" placeholder={`Search Movies, Series`} onChange={(e) => setQuery(e.target.value)} />
+          <input type="text" name="query" className="bg-transparent focus:outline-none group focus:bg-transparent autofill:!bg-transparent" placeholder={`Search Movies, Series`} onChange={(e) => setQuery(e.target.value)} />
           <Button variant={`smallButton`} children={<FaSearch size={18} />} />
         </div>
       </form>

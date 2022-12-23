@@ -6,7 +6,7 @@ import useFetch from '../Hooks/useFetch';
 
 const SearchResult = () => {
   const [searchParams] = useSearchParams();
-  const query = searchParams.get('search');
+  const query = searchParams.get('query');
 
   const { data, isLoading, error } = useFetch(`/search/multi`, '', `${query}`);
   return (
